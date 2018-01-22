@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<MT1>
+	<emisor>monitor</emisor>
+	<receptor>tienda2088</receptor>
+	<time>
+		<timestamp>1514030047</timestamp>
+		<creador>192.168.56.1</creador>
+	</time>
+	<listaP>
+	<producto><nombre>peras</nombre><cantidad>198</cantidad></producto><producto><nombre>manzanas</nombre><cantidad>151</cantidad></producto><producto><nombre>agua</nombre><cantidad>275</cantidad></producto><producto><nombre>cervezas</nombre><cantidad>229</cantidad></producto><producto><nombre>leche</nombre><cantidad>260</cantidad></producto><producto><nombre>queso</nombre><cantidad>268</cantidad></producto><producto><nombre>carne</nombre><cantidad>270</cantidad></producto><producto><nombre>pescado</nombre><cantidad>185</cantidad></producto><producto><nombre>aceite</nombre><cantidad>161</cantidad></producto><producto><nombre>platanos</nombre><cantidad>169</cantidad></producto><producto><nombre>arroz</nombre><cantidad>289</cantidad></producto><producto><nombre>vino</nombre><cantidad>224</cantidad></producto><producto><nombre>ciruelas</nombre><cantidad>247</cantidad></producto><producto><nombre>lentejas</nombre><cantidad>124</cantidad></producto><producto><nombre>jamon</nombre><cantidad>227</cantidad></producto><producto><nombre>patatas</nombre><cantidad>164</cantidad></producto><producto><nombre>tomates</nombre><cantidad>160</cantidad></producto></listaP>
+</MT1>

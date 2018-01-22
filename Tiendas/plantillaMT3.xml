@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MT3>
+<!-- Tercer mensaje - Monitor-Tienda: Dime estado -->
+	<emisor>id</emisor>
+	<receptor>id</receptor>
+	<time>
+		<timestamp>ts</timestamp>
+		<creador>direccion</creador>
+	</time>
+</MT3>

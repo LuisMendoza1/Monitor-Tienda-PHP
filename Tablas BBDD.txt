@@ -1,0 +1,18 @@
+
+CREATE TABLE `multi`.`productos` ( `idproducto` INT UNSIGNED NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , PRIMARY KEY (`idproducto`));
+
+CREATE TABLE `multi`.`clientes` ( `idcliente` VARCHAR(50) NOT NULL , `ip` VARCHAR(50) NULL , PRIMARY KEY (`idcliente`));
+
+CREATE TABLE `multi`.`tiendas` ( `idtienda` VARCHAR(50) NOT NULL , `ip` VARCHAR(50) NULL , `maxProductos` INT NULL , `aforo` INT NULL , PRIMARY KEY (`idtienda`));
+
+CREATE TABLE `multi`.`tiendaproducto` ( `idproducto` INT NOT NULL , `idtienda` VARCHAR(50) NOT NULL , `cantidad` INT NOT NULL , PRIMARY KEY (`idproducto`, `idtienda`));
+
+CREATE TABLE `multi`.`mensajes` ( `idEmisor` VARCHAR(50) NOT NULL , `idReceptor` VARCHAR(50)  NOT NULL ,`timestamp` VARCHAR(50) NOT NULL,`tipo` VARCHAR(50) NOT NULL, PRIMARY KEY (`idEmisor`,`timestamp`));
+
+CREATE TABLE `multi`.`clientetienda` ( `idcliente` VARCHAR(50) NOT NULL , `idtienda` VARCHAR(50) NOT NULL , PRIMARY KEY (`idcliente`,`idtienda`));
+
+CREATE TABLE `multi`.`servtienda` ( `ip` VARCHAR(50) NOT NULL , `maxTiendas` INT NOT NULL , `tipo` VARCHAR(50) NOT NULL, PRIMARY KEY (`ip`));
+
+CREATE TABLE `multi`.`clienteproducto` ( `idproducto` INT NOT NULL , `idcliente` VARCHAR(50) NOT NULL , `cantidad` INT NOT NULL , PRIMARY KEY (`idproducto`, `idcliente`));
+
+CREATE TABLE `multi`.`clientesentienda` ( `idtienda` VARCHAR(50) NOT NULL , `idcliente` VARCHAR(50) NOT NULL , PRIMARY KEY (`idtienda`, `idcliente`));

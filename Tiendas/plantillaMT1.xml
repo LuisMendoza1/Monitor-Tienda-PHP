@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<MT1>
+	<emisor>idmonitor</emisor>
+	<receptor>idtienda</receptor>
+	<time>
+		<timestamp>ts</timestamp>
+		<creador>ipmon</creador>
+	</time>
+	<listaP>
+	</listaP>
+</MT1>

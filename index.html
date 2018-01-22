@@ -1,0 +1,104 @@
+<html>
+
+<style type="text/css">   
+a:link   
+{   
+ text-decoration:none;   
+}   
+</style>
+
+<head>
+	<title>Monitor - Nuevo servidor de tiendas</title>
+	<link rel="stylesheet" type="text/css" href="clientes.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="mensajesc.js"></script>
+	<style type="text/css"> 
+	body{
+	background-color:#FFFFE0
+	}
+	</style>
+</head>
+<body marginheight=30 marginwidth=180>
+<font size=15 face="courier" color="#FF0000">Monitor </font>
+<font size=15 face="courier" color="#00FF7F">Tienda</font>
+<font size=15 face="courier" color="#87CEFA">r.io</font>
+
+<hr style="color: #0059ba;" size="5"/>
+
+	<div class="header">		
+
+		<br></br>
+		<a href="http://localhost:8080/monitor/Estadisticas/numtiendas.php"><font size=3> &nbsp  &nbsp &nbsp &nbsp &nbsp TIENDAS DISPONIBLES &nbsp </font></a>
+		<a href="http://localhost:8080/monitor/Estadisticas/productostienda.php"><font size=3>  &nbsp &nbsp &nbsp PRODUCTOS EN CADA TIENDA &nbsp </font></a>
+		<a href="http://localhost:8080/monitor/Estadisticas/clienteentienda.php"><font size=3>  &nbsp &nbsp &nbsp CLIENTES EN CADA TIENDA </font></a>
+		<a href="http://localhost:8080/monitor/Estadisticas/mensajitos.php"><font size=3>  &nbsp &nbsp &nbsp MENSAJES</font></a>
+	</div>
+	<hr style="color: #0056b2;" />
+
+		<h4><i><u>CREAR TIENDAS</u></i></h4>
+		<IMG SRC="tiendario.jpg" WIDTH=500 HEIGHT=450 ALT="Obra de arte" align="right">
+	
+		
+	<form id="buscatienda" name="formulario" method="post" action="http://localhost:8080/monitor/Tiendas/iniciotienda.php">
+
+			<tr>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <label for="txtServer">URL Servidor:</label>
+				&nbsp  <input type="text" id="Servidor" name="txtServer"/>
+			</tr>
+			<br></br>
+			<tr>
+				<label for="txtServer">Numero de tiendas en el servidor:</label>
+				&nbsp <input type="text" id="Tiendas" name="txtNTiendas"/>
+			</tr>
+			<br></br>
+			<tr>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <label for="txtServer">Tipo tienda:</label>
+				&nbsp <input type="text" id="tipo" name="txtNtipo"/>
+			</tr>
+			<br></br>
+			<tr>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="submit" value="Levantar Tiendas"/>
+			</tr>
+	</form>
+	<hr style="color: #0056b2;" />
+	<h4><i><u>ESTADO TIENDA</u></i></h4>
+
+		<form id="damestado" name="estado" method="post" action="http://localhost:8080/monitor/Tiendas/pedirestado.php">
+			<tr>
+				&nbsp <label for="txtServer">URL:</label>
+				&nbsp <input type="text" id="server" name="txtURL"/>
+
+				<br></br>
+				<label for="txtServer">Tienda:</label>
+				&nbsp <input type="text" id="tienda" name="txtTienda"/>
+				 &nbsp &nbsp <input type="submit" value="Pedir Estado"/>
+			</tr>
+		</form>
+		<hr style="color: #0056b2;" />
+		<h4><i><u>FIN TIENDA</u></i></h4>
+
+		
+		<form id="fintienda" name="estado" method="post" action="http://localhost:8080/monitor/Tiendas/fintienda.php">
+		<tr>
+				 &nbsp <label for="txtServer">URL:</label>
+				 &nbsp <input type="text" id="server" name="txtDir"/>
+				 
+				 <br></br>
+				 <label for="txtServer">Tienda:</label>
+				 &nbsp <input type="text" id="tienda" name="txtTiendaa"/>
+				 &nbsp &nbsp &nbsp  <input type="submit" value="Fin Tienda"/>
+		</tr>
+		</form>
+		
+		<br></br>
+		
+				<form id="reloid" name="estado" method="post" action="http://localhost:8080/monitor/reloid.php">
+		<tr>
+		<label for="txtServer">Reiniciar:</label>
+				 &nbsp  <input type="submit" value="Reploid"/>
+		</tr>
+		</form>
+		
+</body>
+
+</html>

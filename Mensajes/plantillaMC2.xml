@@ -1,0 +1,12 @@
+<MC2>
+	<emisor>id</emisor>
+	<receptor>id</receptor>
+	<time>
+		<timestamp>ts</timestamp>
+		<creador>direccion</creador>
+	</time>
+	<listaP>
+	</listaP>
+	<listaT>
+	</listaT>
+</MC2>

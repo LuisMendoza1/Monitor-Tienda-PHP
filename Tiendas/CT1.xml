@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CT1>
+<!-- Primer mensaje - El cliente se presenta enviando la lista de tiendas que conoce y los productos que desea comprar -->
+<!-- La tienda tras recibir el mensaje debe comprobar si tiene espacio libre para admitir al cliente (comprobar aforo) -->
+	<emisor>id</emisor>
+	<receptor>id</receptor>
+	<time>
+		<timestamp>ts</timestamp>
+		<creador>direccion</creador>
+	</time>
+	<listaP>
+		<producto>
+			<nombre>nom</nombre>
+			<cantidad>cant</cantidad>
+		</producto>
+		<!-- ... -->
+	</listaP>
+	<listaT>
+		<tienda>
+			<idTienda>id</idTienda>
+			<direccion>url</direccion>
+			<tipo>php/py/js</tipo>
+		</tienda>
+		<!-- ... -->
+	</listaT>
+</CT1>
